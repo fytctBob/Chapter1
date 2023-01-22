@@ -1,7 +1,4 @@
 #include <iostream>
-#include <string>
-int main () {
-    #include<iostream>
 using namespace std;
  
 int main()
@@ -30,6 +27,8 @@ int main()
                     ca1=ca2;break;
                 case '+':
                 case '-':
+                case '*':
+                case '/':
                     switch(ca1)
                     {
                         case '+': a0=a0+a1;break;
@@ -38,36 +37,6 @@ int main()
                         case '/': a0=a0/a1;
                     }
                     ca1=ca2;cin>>a1>>ca2;break;
-                case '*':
-                case '/':
-                    // while(1)
-                    {
-                            switch(ca2)
-                            {
-                                case '*':cin>>a2;a1=a1*a2;cin>>ca2;break;
-                                case '/':cin>>a2;a1=a1/a2;cin>>ca2;
-                            }
-                            if(ca2=='=')
-                            {
-                                switch(ca1)
-                                {
-                                     case '+': a0=a0+a1;break;
-                                     case '-': a0=a0-a1;break;
-                                }
-                                ca1=ca2;
-                                break;
-                            }
-                            if(ca2=='+'||ca2=='-')
-                            {
-                                switch(ca1)
-                                {
-                                     case '+': a0=a0+a1;break;
-                                     case '-': a0=a0-a1;break;
-                                }
-                                ca1=ca2;cin>>a1>>ca2;
-                                break;
-                            }
-                    }
             }
  
         }
