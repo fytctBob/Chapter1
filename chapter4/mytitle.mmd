@@ -1,0 +1,7 @@
+flowchart TD
+mystart[upper first letter of the first word]
+mystart-->condiction1{isspace}
+condiction1-->|true| set1[capitalize next word]
+condiction1-->|false| set2{lowercase all alpha in last word except the first one}
+set1-->other1[sentence in uppercase]
+set2-->other1

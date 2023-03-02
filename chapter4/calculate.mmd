@@ -1,0 +1,14 @@
+flowchart TD
+mystart[start]
+mystart-->condiction1{operator is +}
+condiction1-->|true| set1[output sum]
+condiction1-->|false| condiction2{operator is -}
+condiction2-->|true| set2[output difference]
+condiction2-->|false| condiction3{operator is *}
+condiction3-->|true| set3[output product]
+condiction3-->|false| condiction4{operator is /}
+condiction4-->|true| set4[output quotient]
+set1-->other1[end]
+set2-->other1
+set3-->other1
+set4-->other1
