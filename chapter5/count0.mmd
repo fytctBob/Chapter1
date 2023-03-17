@@ -1,0 +1,9 @@
+flowchart TD
+mystart[cin>>num]
+mystart-->condiction1{is positive}
+condiction1-->|true| condiction2{is 0}
+condiction1-->|false| other1[input another number]
+other1-->condiction1
+condiction2-->|true| other2[end]
+condiction2-->|false| other3[count 0, find the largest digit]
+other3-->other4[cout amount of 0, largest digit]
