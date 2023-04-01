@@ -31,7 +31,7 @@ void mytoys(string fileName)
         cin >> toyName;
         cin >> toyAmount;
         int randprize = rand() % 100 + 1;
-        outfile << toyName << " " << toyAmount << "" << randprize << endl;
+        outfile << toyName << " " << toyAmount << " " << randprize << endl;
     }
     outfile.close();
 }
