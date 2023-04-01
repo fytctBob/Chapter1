@@ -21,7 +21,7 @@ int toyType;
         cin >> toyName;
         cin >> toyAmount;
         int randprize = rand() % 100 + 1;
-        outfile << toyName << " " << toyAmount << "" << randprize << endl;
+        outfile << toyName << " " << toyAmount << " " << randprize << endl;
     }
     outfile.close();
     return 0;
