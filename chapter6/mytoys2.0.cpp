@@ -11,6 +11,7 @@ void mytoys(string fileName)
     if (outfile)
     {
         cout << "File exists..." << endl;
+        return 1;
     }
     else
     {
@@ -49,6 +50,7 @@ void mytoys_cost(string fileName)
     if (infile)
     {
         cout << "File exists..." << endl;
+        return 1;
     }
     else
     {
