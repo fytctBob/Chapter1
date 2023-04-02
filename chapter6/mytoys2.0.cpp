@@ -16,7 +16,7 @@ void mytoys(string fileName)
     else
     {
         cout << "Error: could not open file... " << endl;
-        return -1;
+        return 0;
     }
 
     cout << "Writing to the file" << endl;
@@ -55,7 +55,7 @@ void mytoys_cost(string fileName)
     else
     {
         cout << "Error: could not open file... " << endl;
-        return -1;
+        return 0;
     }
     cout << "Your toy list: " << endl;
     while (infile >> toyName >> toyAmount >> randprize)
