@@ -1,8 +1,16 @@
 #include <iostream>
 using namespace std;
 int main() {
-    const int N = 5;
-    int arr[N] = {91, 98, 92, 93, 60};
+    int num;
+    cout<<"how many number you want to input?"<<endl;
+    cin>>num;
+    int num_of_num;
+    for (int z = 0; z<=num; z++){
+        cout << "please input the numbers.";
+        cin>>num_of_num;
+    }
+    const int N = num;
+    int arr[N] = {num_of_num};
     for (int i = 0; i < N; i++) {
         int max_idx = 0;
         for (int j = 1; j < N-i; j++) {
@@ -10,7 +18,6 @@ int main() {
                 max_idx = j;
             }
         }
-        
         int tmp = arr[max_idx];
         arr[max_idx] = arr[N-i-1];
         arr[N-i-1] = tmp;
